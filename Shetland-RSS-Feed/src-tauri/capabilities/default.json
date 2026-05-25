@@ -10,9 +10,23 @@
     "opener:default",
     {
       "identifier": "http:default",
-      "allow": [{
-           "url": "https://news.google.com/rss/search?q=shetland&hl=en-GB&gl=GB&ceid=GB:en"
-      }]
+      "allow": [
+        {
+          "url": "https://news.google.com/rss/search?q=shetland&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "url": "http://*"
+        },
+        {
+          "url": "https://*"
+        },
+        {
+          "url": "http://*:*"
+        },
+        {
+          "url": "https://*:*"
+        }
+      ]
     }
   ]
 }
