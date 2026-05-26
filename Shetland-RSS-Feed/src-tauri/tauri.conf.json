@@ -12,7 +12,8 @@
       {
         "title": "shetland-rss-feed",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "minWidth": 420
       }
     ],
     "security": {

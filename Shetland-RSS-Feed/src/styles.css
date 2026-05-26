@@ -53,8 +53,7 @@ h1 {
   text-align: center;
 }
 
-input,
-button {
+button, #main a {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -62,26 +61,19 @@ button {
   font-weight: 500;
   font-family: inherit;
   color: #0f0f0f;
-  background-color: #ffffff;
+  background-color: #dfdfdf;
   transition: border-color 0.25s;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-button {
   cursor: pointer;
+  outline: none;
 }
 
-button:hover {
+button:hover, #main a:hover {
   border-color: #396cd8;
 }
-button:active {
+button:active, #main a:active {
   border-color: #396cd8;
   background-color: #e8e8e8;
-}
-
-input,
-button {
-  outline: none;
 }
 
 #greet-input {
@@ -90,10 +82,13 @@ button {
 
 a {
   font-weight: 500;
-  display: block;
-  border-bottom: 2px solid #aaa;
-  padding: 4px;
   text-decoration: none;
+}
+
+#data a {
+  display: block;
+  border-bottom: 2px solid #bbb;
+  padding: 4px;
 }
 
 h3 {
@@ -115,13 +110,26 @@ p:last-child {
   color: #777;
 }
 
+#back {
+  font-size: 24px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 8px;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root, a {
+  :root, a, button, #main a {
     color: #f0f0f0;
     background-color: #2f2f2f;
   }
 
-  a {
+  #data a {
     border-color: #444;
   }
 
@@ -129,12 +137,10 @@ p:last-child {
     color: #24c8db;
   }
 
-  input,
-  button {
-    color: #ffffff;
+  button, #main a {
     background-color: #0f0f0f98;
   }
-  button:active {
+  button:active, #main a:active {
     background-color: #0f0f0f69;
   }
 }

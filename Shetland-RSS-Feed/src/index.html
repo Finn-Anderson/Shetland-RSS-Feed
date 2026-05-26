@@ -4,16 +4,20 @@
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="styles.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Tauri App</title>
+		<title>Shetland RSS Feed</title>
 		<script type="module" src="/main.js" defer></script>
 	</head>
 
 	<body>
 		<main class="container">
 			<h1>Shetland RSS Feed</h1>
-			<button id="refresh-btn">Refresh</button>
 
-			<div id="data"></div>
+			<div id="main">
+				<a href="feed.html?https://news.google.com/rss/search?q=shetland%20when%3A7d&hl=en-GB&gl=GB&ceid=GB%3Aen">Shetland</a>
+				<a href="feed.html?https://news.google.com/rss/search?q=scotland%20oil%20when%3A7d&hl=en-GB&gl=GB&ceid=GB%3Aen">Oil & Gas</a>
+				<a href="feed.html?https://news.google.com/rss/search?q=scotland%20wind%20energy%20when%3A7d&hl=en-GB&gl=GB&ceid=GB%3Aen">Wind Energy</a>
+				<a href="feed.html?https://news.google.com/rss/search?q=scotland%20fishing%20when%3A7d&hl=en-GB&gl=GB&ceid=GB%3Aen">Fishing</a>
+			</div>
 		</main>
 	</body>
 </html>
